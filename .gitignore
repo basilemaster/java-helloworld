@@ -1,5 +1,24 @@
-# Compiled class file
-*.class
+*.iml
+*.ipr
+*.iws
+.DS_Store
+.checkstyle
+.classpath
+.pmd
+.project
+.ruleset
+.settings/
+.svn/
+target/
+velocity.log
+.externalToolBuilders/
+.idea
+
+bin
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
 
 # Log file
 *.log
@@ -19,6 +38,3 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*

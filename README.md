@@ -1,6 +1,9 @@
 # java-helloworld
 A java-helloworld is traditionally used to introduce novice programmers to Java programming language.
 
+First, start by retrieving the source code.
+git clone https://github.com/basilemaster/java-helloworld.git
+
 # To compile only
 mvn compile
 # To clean and compile

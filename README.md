@@ -3,6 +3,8 @@ A java-helloworld is traditionally used to introduce novice programmers to Java 
 
 # To compile only
 mvn compile
+# To clean and compile
+mvn clean compile
 
 # To compile and run
 mvn compile exec:java -Dexec.mainClass="com.mbali.primetechno.it.helloword.Main"

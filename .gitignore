@@ -10,6 +10,7 @@
 .settings/
 .svn/
 target/
+release.properties
 velocity.log
 .externalToolBuilders/
 .idea

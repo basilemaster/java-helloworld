@@ -10,6 +10,10 @@
   <name>java-helloword</name>
   <description>Simple java program</description>
   <url>http://www.prime-techno.com</url>
+  
+  
+  
+  <!-- Project Information -->
 
   <licenses>
     <license>
@@ -46,6 +50,20 @@
   </properties>
 
   <dependencies>
+
+      <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>2.0.0</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-simple</artifactId>
+          <version>2.0.0</version>
+      </dependency>
+
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
@@ -80,20 +98,56 @@
       <version>3.23.0</version>
       <scope>test</scope>
     </dependency>
-
   </dependencies>
 
-  <build>
-    <finalName>helloworld</finalName>
-    <plugins>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>exec-maven-plugin</artifactId>
-          <version>3.1.0</version>
-          <configuration>
-            <mainClass>com.mbali.primetechno.it.helloword.Main</mainClass>
-          </configuration>
-        </plugin>
-    </plugins>
-  </build>
+	<!-- Environment Settings -->
+
+	<scm>
+		<url>https://github.com/basilemaster/java-helloworld</url>
+		<connection>scm:git:https://github.com/basilemaster/java-helloworld.git</connection>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Releases</name>
+			<url>http://192.168.1.189:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Internal Snapshots</name>
+			<url>http://192.168.1.189:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+
+	<!-- Build Settings -->
+	<build>
+		<finalName>helloworld</finalName>
+		<pluginManagement>
+		
+		</pluginManagement>
+
+		<plugins>
+			<plugin>
+			  <groupId>org.codehaus.mojo</groupId>
+			  <artifactId>exec-maven-plugin</artifactId>
+			  <version>3.1.0</version>
+			  <configuration>
+				<mainClass>com.mbali.primetechno.it.helloword.Main</mainClass>
+			  </configuration>
+			</plugin>
+
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-release-plugin</artifactId>-->
+<!--                <version>3.0.1</version>-->
+<!--                <configuration>-->
+<!--                    <tagBase>https://svn.mycompany.com/repos/myapplication/releases</tagBase>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+		</plugins>
+
+	</build>
 </project>

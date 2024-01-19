@@ -104,7 +104,7 @@
 	<scm>
 		<url>https://github.com/basilemaster/java-helloworld</url>
 		<connection>scm:git:https://github.com/basilemaster/java-helloworld.git</connection>
-		<tag>release</tag>
+		<tag>java-helloword-1.0.1</tag>
 	</scm>
 	
 	<distributionManagement>

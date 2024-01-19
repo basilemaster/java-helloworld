@@ -11,6 +11,7 @@
 .svn/
 target/
 release.properties
+pom.xml.releaseBackup
 velocity.log
 .externalToolBuilders/
 .idea

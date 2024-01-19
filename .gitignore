@@ -12,6 +12,12 @@
 target/
 release.properties
 pom.xml.releaseBackup
+pom.xml.next
+pom.xml.branch
+pom.xml.tag
+pom.xml.backup
+release-pom.xml
+
 velocity.log
 .externalToolBuilders/
 .idea

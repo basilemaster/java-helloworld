@@ -123,10 +123,10 @@
 
 	<!-- Build Settings -->
 	<build>
-		<finalName>helloworld</finalName>
-		<pluginManagement>
-		
-		</pluginManagement>
+<!--		<finalName>helloworld</finalName>-->
+<!--		<pluginManagement>-->
+<!--		-->
+<!--		</pluginManagement>-->
 
 		<plugins>
 			<plugin>

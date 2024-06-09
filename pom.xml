@@ -1,152 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.mbali.primetechno.it.helloword</groupId>
-  <artifactId>java-helloword</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
-  <name>java-helloword</name>
-  <description>Simple java program</description>
-  <url>http://www.prime-techno.com</url>
-  
-  
-  
-  <!-- Project Information -->
-
-  <licenses>
-    <license>
-      <name>Apache License, Version 2.0</name>
-      <distribution>repo</distribution>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-    </license>
-  </licenses>
-
-  <developers>
-    <developer>
-      <id>bmbali</id>
-      <name>BASILE MBALI</name>
-      <email>basile_mbali@yahoo.fr</email>
-    </developer>
-  </developers>
-
-  <organization>
-    <name>Prime Techno</name>
+    <groupId>com.mbali.primetechno.it.helloword</groupId>
+    <artifactId>java-helloword</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+    <name>java-helloword</name>
+    <description>Simple java program</description>
     <url>http://www.prime-techno.com</url>
-  </organization>
-
-  <properties>
-    <!-- Explicitly declaring the source encoding eliminates the following message: -->
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <maven.compiler.plugin>3.8.0</maven.compiler.plugin>
-
-    <junit.jupiter.version>5.9.0</junit.jupiter.version>
-    <!-- Testing related properties -->
-    <junit-platform.version>5.5.0</junit-platform.version>
-  </properties>
-
-  <dependencies>
-
-      <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
-      <dependency>
-          <groupId>org.slf4j</groupId>
-          <artifactId>slf4j-api</artifactId>
-          <version>2.0.0</version>
-      </dependency>
-
-      <dependency>
-          <groupId>org.slf4j</groupId>
-          <artifactId>slf4j-simple</artifactId>
-          <version>2.0.0</version>
-      </dependency>
-
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <scope>test</scope>
-      <version>${junit.jupiter.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter</artifactId>
-      <version>${junit.jupiter.version}</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>${junit.jupiter.version}</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-params</artifactId>
-      <version>${junit.jupiter.version}</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.23.0</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
-	<!-- Environment Settings -->
-
-	<scm>
-		<url>https://github.com/basilemaster/java-helloworld</url>
-		<connection>scm:git:https://github.com/basilemaster/java-helloworld.git</connection>
-		<tag>HEAD</tag>
-	</scm>
-	
-	<distributionManagement>
-		<repository>
-			<id>releases</id>
-			<name>Releases</name>
-			<url>http://192.168.1.189:8081/repository/maven-releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Internal Snapshots</name>
-			<url>http://192.168.1.189:8081/repository/maven-snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
 
 
-	<!-- Build Settings -->
-	<build>
-		<finalName>helloworld</finalName>
-		<pluginManagement>
-		
-		</pluginManagement>
+    <!-- Project Information -->
 
-		<plugins>
-			<plugin>
-			  <groupId>org.codehaus.mojo</groupId>
-			  <artifactId>exec-maven-plugin</artifactId>
-			  <version>3.1.0</version>
-			  <configuration>
-				<mainClass>com.mbali.primetechno.it.helloword.Main</mainClass>
-			  </configuration>
-			</plugin>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
 
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-release-plugin</artifactId>-->
-<!--                <version>3.0.1</version>-->
-<!--                <configuration>-->
-<!--                    <tagBase>https://svn.mycompany.com/repos/myapplication/releases</tagBase>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-		</plugins>
+    <developers>
+        <developer>
+            <id>bmbali</id>
+            <name>BASILE MBALI</name>
+            <email>basile_mbali@yahoo.fr</email>
+        </developer>
+    </developers>
 
-	</build>
+    <organization>
+        <name>Prime Techno</name>
+        <url>http://www.prime-techno.com</url>
+    </organization>
+
+    <properties>
+        <!-- Explicitly declaring the source encoding eliminates the following message: -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.plugin>3.8.0</maven.compiler.plugin>
+
+        <junit.jupiter.version>5.9.0</junit.jupiter.version>
+        <!-- Testing related properties -->
+        <junit-platform.version>5.5.0</junit-platform.version>
+    </properties>
+
+    <scm>
+        <connection>scm:git:git@github.com:basilemaster/java-helloworld.git</connection>
+        <developerConnection>scm:git:git@github.com:basilemaster/java-helloworld.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>http://github.com/basilemaster/java-helloworld</url>
+    </scm>
+
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.23.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- Environment Settings -->
+
+    <scm>
+        <url>https://github.com/basilemaster/java-helloworld</url>
+        <connection>scm:git:https://github.com/basilemaster/java-helloworld.git</connection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Releases</name>
+            <url>http://192.168.1.189:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Internal Snapshots</name>
+            <url>http://192.168.1.189:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+    <!-- Build Settings -->
+    <build>
+        <finalName>helloworld</finalName>
+        <pluginManagement>
+
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.mbali.primetechno.it.helloword.Main</mainClass>
+                </configuration>
+            </plugin>
+
+            <!--            <plugin>-->
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-release-plugin</artifactId>-->
+            <!--                <version>3.0.1</version>-->
+            <!--                <configuration>-->
+            <!--                    <tagBase>https://svn.mycompany.com/repos/myapplication/releases</tagBase>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
+        </plugins>
+
+    </build>
 </project>

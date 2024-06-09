@@ -17,7 +17,7 @@ public class Main {
         int number = 5;
         int doubled = doubleNumber(number);
 
-        System.out.println("The doubled number is: " + doubled);
+        System.out.println("The double number is: " + doubled);
 
     }
 

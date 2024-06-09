@@ -14,10 +14,10 @@ public class Main {
         greeting = "to all the team";
         greet(greeting);
 
-        int number = 5;
+        int number = 12;
         int doubled = doubleNumber(number);
 
-        System.out.println("The doubled number is: " + doubled);
+        System.out.println("The double number is: " + doubled);
 
     }
 

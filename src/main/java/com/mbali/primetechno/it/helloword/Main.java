@@ -14,7 +14,7 @@ public class Main {
         greeting = "to all the team";
         greet(greeting);
 
-        int number = 12;
+        int number = 14;
         int doubled = doubleNumber(number);
 
         System.out.println("The double number is: " + doubled);

@@ -48,16 +48,8 @@
         <junit-platform.version>5.5.0</junit-platform.version>
     </properties>
 
-    <scm>
-        <connection>scm:git:git@github.com:basilemaster/java-helloworld.git</connection>
-        <developerConnection>scm:git:git@github.com:basilemaster/java-helloworld.git</developerConnection>
-        <tag>HEAD</tag>
-        <url>http://github.com/basilemaster/java-helloworld</url>
-    </scm>
-
 
     <dependencies>
-
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
             <groupId>org.slf4j</groupId>
